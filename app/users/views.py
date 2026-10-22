@@ -25,7 +25,7 @@ def login_required(func):
     return wrapper
 
 
-@users.route("/login", methods=["GET", "POST"])
+@users.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == "POST":
         username = request.form.get("username", "")

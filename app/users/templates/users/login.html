@@ -4,7 +4,7 @@
 <div class="container mt-4">
     <h1>Вхід</h1>
 
-    <form method="POST">
+    <form method="POST" action="{{ url_for('users.login') }}">
         <div class="mb-3">
             <label for="username" class="form-label">Логін</label>
             <input type="text" class="form-control"
